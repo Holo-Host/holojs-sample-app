@@ -1,0 +1,137 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "sampleApp",
+    "description": "A sample app\n\n## usage\nThis documentation was auto-generated from the application's dna file using [dna-to-openapi](https://www.npmjs.com/package/@holochain/dna-to-openapi).\n\ndna-to-openapi version 0.2.0\n",
+    "version": 1
+  },
+  "servers": [
+    {
+      "url": "http://{host}:{port}/fn",
+      "variables": {
+        "host": {
+          "default": "127.0.0.1"
+        },
+        "port": {
+          "default": "4141"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/sampleZome/sampleEntryCreate": {
+      "post": {
+        "tags": [
+          "sampleZome"
+        ],
+        "summary": "sampleEntryCreate",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "text/plain"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "title": "Stub Schema",
+                "type": "object",
+                "properties": {
+                  "stub": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sampleZome/sampleEntryRead": {
+      "post": {
+        "tags": [
+          "sampleZome"
+        ],
+        "summary": "sampleEntryRead",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "text/plain"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "title": "Stub Schema",
+                "type": "object",
+                "properties": {
+                  "stub": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
