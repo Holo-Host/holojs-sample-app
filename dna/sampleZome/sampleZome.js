@@ -28,7 +28,7 @@ function genesis() {
     return true;
 }
 
-function bridgeGenesis() {
+function bridgeGenesis(side, dna, appData) {
     return true;
 }
 

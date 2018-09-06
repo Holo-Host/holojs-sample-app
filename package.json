@@ -1,0 +1,11 @@
+{
+  "name": "testapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Holo-Host/holojs-sample-app.git",
+  "author": "Michael Dougherty <maackle.d@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "holojs": "git+ssh://git@github.com/Holo-Host/holo.js"
+  }
+}
